@@ -105,9 +105,11 @@ public class EmpleadoCrudController {
 		obj.setEstado(optEmpleado.get().getEstado());
 		obj.setFechaActualizacion(new Date());
 		
+		
 		//Para la PC2
 		//Usuario objUsuario=(Usuario)session.getAttribute("objUsuario");
 		//obj.setUsuarioActualiza(objUsuario);
+		//obj.setUsuarioRegistro(optEmpleado.get().getFechaRegistro());
 		
 		Empleado objSalida = empleadoService.actualizaEmpleado(obj);
 		if (objSalida == null) {
